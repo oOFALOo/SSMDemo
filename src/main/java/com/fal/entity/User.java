@@ -1,23 +1,43 @@
 package com.fal.entity;
 
 public class User {
-	private String host;
-	private String user;
+    private Long id;
 
-	public String getHost() {
-		return host;
-	}
+    private String name;
 
-	public void setHost(String host) {
-		this.host = host;
-	}
+    private String password;
 
-	public String getUser() {
-		return user;
-	}
+    private String salt;
 
-	public void setUser(String user) {
-		this.user = user;
-	}
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt == null ? null : salt.trim();
+    }
 }
